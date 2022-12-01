@@ -61,6 +61,31 @@ print(" ")
 print(" ")
 print(" ")
 print(" ")
+import pyfiglet
+from termcolor import colored
+
+ascii_banner = pyfiglet.figlet_format("CPS premium")
+print(ascii_banner)
+print(" ")
+print(" ")
 print("Welcome!")
 time.sleep(3)
 print("You have choosen to buy CPS Premium")
+print("What plan Would you like?")
+print("[-]Yearly Plan")
+print("[-]Monthly plan")
+choice = input("")
+
+if choice == "yearly plan":
+    print("You have chosen out Yearly Plan.")
+    time.sleep(1)
+    print("Loading...")
+    from subprocess import call
+    call(["python", "Yearly.py"])
+
+if choice == "monthly plan":
+    print("You have choosen our Monthly Plan")
+    time.sleep(1)
+    print("Loading...")
+    from subprocess import call
+    call(["python", "Monthly.py"])
