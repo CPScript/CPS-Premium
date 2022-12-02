@@ -1,5 +1,4 @@
 import time
-from termcolor import colored
 print("Loading...")
 time.sleep(5)
 print(" ")
@@ -139,10 +138,8 @@ print(" ")
 print(" ")
 print(" ")
 print(" ")
-text = colored("Please select the plan you would like to $BUY$", "blue")
-print(text)
-text = colored("The text you type is case sensitive. Type it correctly!.", "red")
-print(text)
+print("Please select the plan you would like to $BUY$")
+print("The text you type is case sensitive. Type it correctly!")
 print(" ")
 print(" ")
 print("[->]Yearly Plan")
@@ -151,22 +148,15 @@ print("[->]Monthly plan")
 choice = input("")
 
 if choice == "yearly plan":
-    text = colored("you have choosen our Yearly Plan ", "green")
-    print(text)
+    print("you have choosen our Yearly Plan")
     time.sleep(1)
-    text = colored("Loading...", "red")
-    print(text)
+    print("Loading...")
     from subprocess import call
     call(["python", "Yearly.py"])
 
 if choice == "monthly plan":
-    text = colored("you have choosen our Monthly Plan ", "green")
+    print("you have choosen our Monthly Plan ", "green")
     time.sleep(1)
-    text = colored("Loading...", "red")
-    print(text)
+    print("Loading...", "red")
     from subprocess import call
     call(["python", "Monthly.py"])
-
-
-
-print("error")
