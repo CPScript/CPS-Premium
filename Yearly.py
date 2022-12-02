@@ -375,7 +375,7 @@ print("Then you will be given a privet link to a secret Github account with all 
 time.sleep(10)
 print(" ")
 print("Your Public IP addres has been Set in our data base and our B0TS will be monitoring your activity.")
-print("The only way that we will do anything is if you steal our scripts and or leack any info")
+print("The only way that we will do anything is if you steal our scripts and or leak any info")
 time.sleep(10)
 print(" ")
 print(" ")
