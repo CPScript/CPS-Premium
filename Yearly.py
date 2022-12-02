@@ -1,4 +1,6 @@
 import time
+import pyfiglet
+from termcolor import colored
 import socket    
 hostname = socket.gethostname()    
 IPAddr = socket.gethostbyname(hostname)
@@ -303,9 +305,6 @@ print(" ")
 print(" ")
 print(" ")
 print(" ")
-import pyfiglet
-from termcolor import colored
-
 ascii_banner = pyfiglet.figlet_format("Yearly Plan")
 print(ascii_banner)
 print("Thanks for selecting our Yearly Plan")
