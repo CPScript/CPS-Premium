@@ -1,5 +1,4 @@
 import time
-from termcolor import colored
 import socket    
 hostname = socket.gethostname()    
 IPAddr = socket.gethostbyname(hostname)
