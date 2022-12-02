@@ -1,5 +1,4 @@
 import time
-import pyfiglet
 from termcolor import colored
 print("Loading...")
 time.sleep(5)
@@ -62,8 +61,7 @@ print(" ")
 print(" ")
 print(" ")
 print(" ")
-ascii_banner = pyfiglet.figlet_format("CPS premium")
-print(ascii_banner)
+print("CPS-PS")
 print(" ")
 print(" ")
 print("Welcome!")
