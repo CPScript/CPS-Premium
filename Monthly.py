@@ -406,3 +406,4 @@ print("Loading.")
 time.sleep(8)
 from subprocess import call
 call(["python", "End.py"])
+time.sleep(1)
